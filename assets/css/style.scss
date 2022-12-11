@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Comfortaa';
+}
+
+header{
+    padding: 40px 50px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+
+    .header-inner{
+        min-height: 40px;
+        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .menu-toggle{
+            position: absolute;
+            right: 5px;
+
+            .menu-toggle-inner{
+                height: 68px;
+                width: 68px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100px;
+                mix-blend-mode: exclusion;
+                transition: transform .3s ease;
+
+                .line{
+                    width: 22px;
+                    height: 2px;
+                    background-color: #fff;
+                    margin: 4px 0;
+                    transition: all .5s;
+
+                    &.active.top-line{
+                        transform: rotate(45deg);
+                        margin: -1px;
+                        transition: all .5s;
+                    }
+                    &.active.bottom-line{
+                        transform: rotate(-45deg);
+                        margin: -1px;
+                        transition: all .5s;
+                    }
+                }
+            }
+        }
+
+
+        .slide{
+            visibility: hidden;
+            position: absolute;
+            border-radius: 999px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 0%;
+            background-color: #f4f7f6;
+            z-index: -1;
+            transition: all .5s;
+            padding: 8px;
+
+            &.active{
+                width: 100%;
+                visibility: visible;
+                transition: all .5s;
+            }
+        }
+    }
+
+    h1{
+        position: absolute;
+        left: 5px;
+        color: white;
+        font-size: 2rem;
+        text-align: left;
+        mix-blend-mode: exclusion;
+
+        span{
+            font-size: 1.5rem;
+        }
+    }
+
+
+    nav {
+        display: none;
+        width: 50%;
+        margin: auto;
+        align-items: center;
+        justify-content: space-around;
+        &.active{
+            display: flex;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            mix-blend-mode: exclusion;
+            color: white;
+
+            &.router-link-exact-active {
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: black;
+    .home-intro{
+        position: relative;
+        min-height: 350px;
+        margin-top: -10vh;
+        width: 95%;
+        margin: auto;
+  
+        .title{
+            position: relative;
+            z-index: 10;
+            color: white;
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 140%;
+            margin: 0;
+    
+            &.title-big {
+            font-size: 4rem;
+            text-align: left;
+            }
+        }
+        .text{
+            font-weight: 100;
+            font-size: 1rem;
+            line-height: 1.7rem;
+            letter-spacing: -.4px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 9;
+            margin-top: 80px;
+            color: white;
+            text-align: left;
+    
+            a{
+            color: white;
+            }
+        }
+
+        .text-big{
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+
+    }
+}
