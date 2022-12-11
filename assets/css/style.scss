@@ -6,6 +6,8 @@
 
 body{
     font-family: 'Comfortaa';
+    overflow-x: hidden;
+    cursor: none;
 }
 
 header{
@@ -44,16 +46,19 @@ header{
                     background-color: #fff;
                     margin: 4px 0;
                     transition: all .5s;
+                    mix-blend-mode: exclusion;
 
                     &.active.top-line{
                         transform: rotate(45deg);
                         margin: -1px;
                         transition: all .5s;
+                        background-color: black;
                     }
                     &.active.bottom-line{
                         transform: rotate(-45deg);
                         margin: -1px;
                         transition: all .5s;
+                        background-color: black;
                     }
                 }
             }
@@ -170,4 +175,46 @@ header{
         }
 
     }
+}
+
+.cursor-hover-element{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.cursor--large {
+    --size: 100px;
+    border: 1px solid #fff;
+    mix-blend-mode: difference;
+}
+
+.cursor {
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    z-index: 1001;
+}
+
+.cursor--small {
+    --size: 6px;
+    background: #fff;
+    mix-blend-mode: exclusion;
+}
+
+.cursor {
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    z-index: 1001;
 }

@@ -13,7 +13,7 @@
             <h1>
                 Bouet <span>Louis</span>
             </h1>
-            <div id="menu-toggle" class="menu-toggle">
+            <div id="menu-toggle" class="menu-toggle cursor-hover-element">
                 <div class="menu-toggle-inner magnet">
                     <div id="line-1" class="line top-line"></div>
                     <div id="line-2" class="line bottom-line"></div>
@@ -27,19 +27,20 @@
             <div id="slide" class="slide"></div>
         </div>
     </header>
-
+    <div class="outer-cursor cursor cursor--large"></div>
+    <div class="inner-cursor cursor cursor--small"></div>
     <main>
         <div class="home">
             <div class="home-intro">
                 <div class="title title-big">
-                    Etudiant en développement web full-stack
+                    Étudiant en développement web full-stack
                 </div>
                 <div class="text text-big">
                     <div>Bienvenue sur mon portfolio !</div>
                     <div>
                         Vous pouvez me découvrir 
-                        <a href="#">en apprenant un peu plus sur moi</a> et 
-                        <a href="#">mes projets réalisés</a>
+                        <a href="#" class="cursor-hover-element">en apprenant un peu plus sur moi</a> et 
+                        <a href="#" class="cursor-hover-element">mes projets réalisés</a>
                     </div>
                 </div>
             </div>
@@ -47,5 +48,7 @@
     </main>
     
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="assets/js/app.js"></script>
 </html>
