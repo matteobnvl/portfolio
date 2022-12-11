@@ -2,12 +2,24 @@
 * {
   padding: 0;
   margin: 0;
+  cursor: none;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 body {
   font-family: "Comfortaa";
   overflow-x: hidden;
-  cursor: none;
 }
 
 header {
@@ -150,10 +162,21 @@ header nav a.router-link-exact-active {
 }
 .home .home-intro .text a {
   color: white;
+  text-decoration: none;
+}
+.home .home-intro .text a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 2%;
+  background-color: white;
 }
 .home .home-intro .text-big {
   font-size: 1.2rem;
   line-height: 2rem;
+  letter-spacing: 1px;
 }
 
 .cursor-hover-element {
