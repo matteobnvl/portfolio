@@ -132,3 +132,17 @@ function handleMouseLeave(e) {
         backgroundColor: "transparent",
     });
 }
+
+
+const linkA = document.getElementsByTagName('a')
+const cursor = document.getElementById('cursor')
+for(const element in linkA) {
+    linkA[element].addEventListener('mouseenter', function(){
+        cursor.classList.add('exclude-cursor')
+    })
+    linkA[element].addEventListener('mouseleave', function(){
+        cursor.classList.remove('exclude-cursor')
+    })
+};
+
+linkA.mouse

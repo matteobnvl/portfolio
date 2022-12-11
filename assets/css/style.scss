@@ -220,6 +220,10 @@ header{
     transform: translate(-50%,-50%);
     pointer-events: none;
     z-index: 1001;
+
+    &.exclude-cursor{
+        background-color: #fff !important;
+    }
 }
 
 .cursor--small {
