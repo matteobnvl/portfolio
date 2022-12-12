@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) {
+  .title-big {
+    font-size: 2rem !important;
+  }
+  header {
+    padding: 10px 10px 0;
+  }
+  .text-big {
+    font-size: 1rem !important;
+  }
+  .cursor {
+    display: none !important;
+  }
+  .slide {
+    border-radius: 0px !important;
+    top: -40px !important;
+    right: -30px !important;
+    bottom: -100vh !important;
+    width: 120vw !important;
+    overflow: hidden !important;
+  }
+  nav {
+    width: 100% !important;
+    position: absolute;
+    left: 0 !important;
+    top: 250%;
+    height: 300px !important;
+    flex-wrap: wrap;
+  }
+  nav a {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  nav a:after {
+    display: none;
+  }
+}/*# sourceMappingURL=style_mobile.css.map */

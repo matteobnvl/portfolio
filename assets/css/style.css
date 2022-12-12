@@ -160,11 +160,19 @@ header nav a.router-link-exact-active {
   color: white;
   text-align: left;
 }
-.home .home-intro .text a {
+.home .home-intro .text-big {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+a {
   color: white;
   text-decoration: none;
+  position: relative;
+  transition: padding-bottom 0.4s ease-in-out;
 }
-.home .home-intro .text a:after {
+a:after {
   content: "";
   display: block;
   position: absolute;
@@ -172,11 +180,6 @@ header nav a.router-link-exact-active {
   height: 1px;
   bottom: 2%;
   background-color: white;
-}
-.home .home-intro .text-big {
-  font-size: 1.2rem;
-  line-height: 2rem;
-  letter-spacing: 1px;
 }
 
 .cursor-hover-element {
