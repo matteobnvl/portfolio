@@ -14,7 +14,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: black;
 }
 
 body {
@@ -90,16 +90,18 @@ header .header-inner .slide.active {
   visibility: visible;
   transition: all 0.5s;
 }
-header h1 {
+header a {
   position: absolute;
   left: 5px;
   color: white;
-  font-size: 2rem;
   text-align: left;
   mix-blend-mode: exclusion;
 }
-header h1 span {
+header a span {
   font-size: 1.5rem;
+}
+header a:after {
+  display: none;
 }
 header nav {
   display: none;
@@ -112,6 +114,7 @@ header nav.active {
   display: flex;
 }
 header nav a {
+  position: relative;
   font-weight: bold;
   text-decoration: none;
   mix-blend-mode: exclusion;
@@ -134,6 +137,9 @@ header nav a.router-link-exact-active {
   margin-top: -10vh;
   width: 95%;
   margin: auto;
+}
+.home .home-intro.about {
+  margin-top: 20vh;
 }
 .home .home-intro .title {
   position: relative;
@@ -225,4 +231,141 @@ a:after {
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 1001;
+}
+
+.box-about .about {
+  width: 100%;
+  min-height: 10vh;
+}
+.box-about .about p {
+  padding-top: 100px;
+}
+.box-about .img {
+  width: 350px;
+  float: right;
+  z-index: 10;
+  margin-left: 50px;
+}
+.box-about .img img {
+  max-width: 100%;
+}
+
+.about {
+  width: 100%;
+  min-height: 60vh;
+  background-color: black;
+}
+.about .about-inner {
+  width: 95%;
+  margin: auto;
+  padding-top: 10vh;
+}
+.about .about-inner .title {
+  position: relative;
+  z-index: 10;
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 140%;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.about .about-inner .title.title-big {
+  font-size: 4rem;
+  text-align: left;
+}
+.about .about-inner .box-about {
+  color: #fff;
+}
+.about .about-inner .box-about .box-skills {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+  z-index: 15;
+}
+.about .about-inner .box-about .box-skills .box {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  border-radius: 999px;
+  transition: all 0.3s ease-out;
+  background-color: rgba(255, 255, 255, 0.135);
+  z-index: 11;
+  position: relative;
+}
+.about .about-inner .box-about .box-skills .box .box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  border-radius: 999px;
+  z-index: 10;
+  transition: all 0.3s ease-out;
+  background-color: black;
+}
+.about .about-inner .box-about .box-skills .box .box-icon i {
+  font-size: 2.5rem;
+}
+.about .about-inner .box-about .box-skills .box span {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  transition: transform 0.5s ease-out;
+}
+.about .about-inner .box-about .box-skills .box:hover {
+  width: 220px;
+}
+.about .about-inner .box-about .box-skills .box:hover span {
+  visibility: visible;
+  transition: transform 0.5s ease-out;
+}
+.about .about-inner .box-formation {
+  width: 100%;
+  min-height: 20vh;
+  margin-top: 15vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about .about-inner .box-formation .box {
+  width: 80px;
+  height: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .about-inner .info {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .about-inner .info .box {
+  color: #f4f7f6;
+  display: none;
+  text-align: center;
+}
+.about .about-inner .info .box h1 {
+  margin-bottom: 15px;
+}
+.about .about-inner .info .box h2 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.about .about-inner .info .box.active {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
