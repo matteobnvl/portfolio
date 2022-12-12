@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="/">
+                <h1>
+                    Bouet <span>Louis</span>
+                </h1>
+            </a>
+            <div id="menu-toggle" class="menu-toggle cursor-hover-element">
+                <div class="menu-toggle-inner magnet">
+                    <div id="line-1" class="line top-line"></div>
+                    <div id="line-2" class="line bottom-line"></div>
+                </div>
+            </div>
+            <nav id="nav">
+                <a href="#">Home</a>
+                <a href="/about.html">À propos</a>
+                <a href="#">Mes projets</a>
+                <a href="/contact.html">Contact</a>
+            </nav>
+            <div id="slide" class="slide"></div>
+        </div>
+    </header>
+    <div id="cursor" class="outer-cursor cursor cursor--large"></div>
+    <div class="inner-cursor cursor cursor--small"></div>
+    <main>
+        <div class="home">
+            <div class="home-intro">
+                <div class="title title-big">
+                    Me contacter
+                </div>
+                <div class="form">
+                    <form action="#" method="post">
+                        <div class="text-champ">
+                            <div>
+                                <input type="text" name="name" id="name" placeholder="Nom prénom" required>
+                            </div>
+                            <div>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
+                            </div>
+                            <div>
+                                <input type="text" name="objet" id="objet" placeholder="Objet" required>
+                            </div>
+                        </div>
+                        <div class="text-champ">
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                        </div>
+                        <button>Envoyer <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="assets/js/app.js"></script>
+</html>
